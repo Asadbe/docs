@@ -1,27 +1,30 @@
 ---
 title: Integrations
-description: Connect Ugen projects to external services.
+description: Connect infrastructure and third-party services to a Ugen project.
+mode: "wide"
 ---
 
-Integrations connect generated apps to tools such as payment providers, CRMs, databases, file storage, automation platforms, and developer services.
+The Integrations tab connects the project to external services and infrastructure providers.
 
 <Frame>
-  <img src="/images/ugen-connectors.png" alt="Ugen connectors page" />
+  <img src="/images/ugen-dashboard-integrations.png" alt="Ugen integrations tab with connected and available services" />
 </Frame>
 
-## Integration flow
+## Available integrations
 
-<Steps>
-  <Step title="Choose a connector">
-    Open the connectors list and select the service your app needs.
-  </Step>
-  <Step title="Add credentials">
-    Enter API keys, OAuth credentials, webhook secrets, or connection strings.
-  </Step>
-  <Step title="Test the connection">
-    Run a simple request before relying on the integration in production.
-  </Step>
-  <Step title="Use it in the app">
-    Connect the integration to tables, actions, server functions, or generated workflows.
-  </Step>
-</Steps>
+The project dashboard shows connected and available integrations, including:
+
+- PostgreSQL
+- MongoDB
+- ClickHouse
+- Playmobile
+- SMTP
+- GitHub
+- GitLab
+- Superset
+- Metabase
+- Transcoder
+
+## Status
+
+Integrations can show states such as **Connected** or **Available**. A connected integration is already configured for the project. An available integration can be connected when the app needs it.

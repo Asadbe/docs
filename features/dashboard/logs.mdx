@@ -1,24 +1,33 @@
 ---
 title: Logs
-description: Debug builds, API calls, integrations, and runtime errors.
+description: Monitor system activity, API requests, and serverless function executions.
+mode: "wide"
 ---
 
-Logs show what happened inside a project. Use them to diagnose errors after generation, preview, API calls, integrations, and deployment.
+The Logs tab shows system activity and serverless function execution history.
 
-## Log types
+<Frame>
+  <img src="/images/ugen-dashboard-logs.png" alt="Ugen logs tab with API activity" />
+</Frame>
 
-- AI generation events
-- Build logs
-- Runtime errors
-- API request logs
-- Authentication events
-- Integration failures
-- Server function output
+## Filters
 
-## Debugging flow
+Logs include controls for:
 
-1. Reproduce the issue.
-2. Open logs around the same timestamp.
-3. Filter by severity or request ID.
-4. Trace the error to code, database rules, secrets, or integration settings.
-5. Fix and retest.
+- Log type
+- Action
+- Time range
+- Collection
+
+## Example events
+
+The project log can show API activity such as:
+
+- `GET /api/v2/items/client_type`
+- `GET /api/v2/items/role`
+- `GET /api/v2/items/alerts`
+- `GET /api/v2/items/weather_records`
+- `GET /api/v2/items/research_stations`
+- `GET /api/v2/items/ice_coverage_data`
+
+Use Logs to debug data loading, API calls, integrations, and server function behavior.

@@ -1,24 +1,41 @@
 ---
 title: Analytics
-description: Track project activity, usage, and product performance.
+description: Monitor project performance, API health, usage limits, and plan capacity.
+mode: "wide"
 ---
 
-Analytics help teams understand whether a generated app is being used successfully after launch.
+The Analytics tab combines project statistics, usage limits, and plan comparison.
 
-## Metrics to track
+<Frame>
+  <img src="/images/ugen-dashboard-analytics.png" alt="Ugen analytics tab with usage limits and plan comparison" />
+</Frame>
 
-- Active users
-- Page views
-- Form submissions
-- API requests
-- Error rates
-- Conversion events
-- Deployment activity
+## Usage limits
 
-## How to use analytics
+Analytics can show:
 
-Review analytics after each release. Compare traffic, errors, and conversion events before and after major changes.
+- Current plan
+- API calls per month
+- Database size
+- Database records
+- File size
+- Monthly AI tokens
+- Daily AI tokens
 
-<Tip>
-  Define the main success event before launch, such as `booking_created`, `deal_won`, `invoice_paid`, or `lead_submitted`.
-</Tip>
+## Plan comparison
+
+The plan comparison table shows limits across plans for:
+
+- API requests per month
+- API requests per second
+- Functions
+- Microfrontends
+- Database size
+- Asset size
+- Users and roles
+- Items
+- Tables
+- API keys
+- AI tokens
+
+Review Analytics before production launch so the project has enough capacity for expected usage.

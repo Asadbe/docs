@@ -1,28 +1,23 @@
 ---
 title: Code
-description: Review and edit generated project code.
+description: Manage generated frontend modules and server functions.
+mode: "wide"
 ---
 
-Ugen generates a working foundation, but builders can still inspect and refine code.
+The Code tab manages generated frontend pages and server functions for the project.
 
-## What to review
+<Frame>
+  <img src="/images/ugen-dashboard-code.png" alt="Ugen code tab with frontend and server functions" />
+</Frame>
 
-- Page structure
-- Components
-- API calls
-- Form validation
-- Database queries
-- Integration logic
-- Error states
+## Code areas
 
-## Editing workflow
+- **Frontend** for modular micro-frontends
+- **Server Functions** for backend logic
+- Frontend usage limits, such as `1 / 5`
+- Add Microfrontend action
+- Status, description, link, framework, open, and edit actions
 
-1. Make one focused change.
-2. Preview the project.
-3. Check logs for errors.
-4. Confirm the database or API behavior still works.
-5. Deploy after review.
+## When to use it
 
-<Tip>
-  Keep prompt-based changes and direct code changes small. Smaller edits are easier to test and easier to roll back.
-</Tip>
+Use Code when you need to inspect generated modules, open the generated app code, edit a frontend, or add server-side functions for backend workflows.

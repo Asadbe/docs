@@ -1,36 +1,36 @@
 ---
 title: Dashboard
-description: Understand the Ugen project dashboard and the tools available inside a generated project.
+description: Understand the real Ugen project dashboard, including Settings, Preview, Code, GitHub Integration, Visual Edit, Theme, and Publish.
+mode: "wide"
 ---
 
-The dashboard is where you manage a Ugen project after it is created. It brings together project settings, users, permissions, files, secrets, integrations, API controls, code, database, logs, and analytics.
+The Ugen project dashboard opens after you select a chat or project. It combines the AI chat, project controls, generated preview, code access, deployment actions, and a settings workspace with project management tabs.
 
 <Frame>
-  <img src="/images/ugen-projects.png" alt="Ugen projects dashboard" />
+  <img src="/images/ugen-dashboard-project-settings.png" alt="Ugen project dashboard settings workspace" />
 </Frame>
 
-## Dashboard areas
+## Project workspace
 
-<CardGroup cols={2}>
-  <Card title="Project settings" icon="settings" href="/features/dashboard/project-settings">
-    Configure project metadata, environments, domains, and deployment behavior.
-  </Card>
-  <Card title="Users and permissions" icon="users" href="/features/dashboard/users">
-    Manage app users, roles, workspace access, and permission rules.
-  </Card>
-  <Card title="Files and secrets" icon="folder-key" href="/features/dashboard/files">
-    Store uploaded assets and private environment values.
-  </Card>
-  <Card title="Code and database" icon="database" href="/features/dashboard/database">
-    Inspect generated source files, schemas, tables, and records.
-  </Card>
-</CardGroup>
+The top project controls include:
 
-## Recommended workflow
+- **Settings** for project configuration, users, permissions, files, secrets, integrations, API, code, database, logs, and analytics
+- **Preview** for the generated app preview
+- **Code** for generated frontend and server function code
+- **GitHub Integration** for source control connection
+- **Publish** for deployment
+- **Visual Edit** for editing the generated UI from the preview
+- **Theme** for visual styling controls
+- **Desktop** and **Fullscreen** controls for preview testing
 
-1. Open the generated project from **Projects**.
-2. Review the generated UI and code.
-3. Check database tables and item fields.
-4. Add secrets and integrations.
-5. Test logs and API responses.
-6. Deploy when the project is ready.
+## Settings sidebar
+
+Inside **Settings**, the left sidebar is organized into three groups:
+
+| Group | Tabs |
+| --- | --- |
+| General | Project Settings, Users, Permissions, Files, Secrets, Integrations |
+| Development | API, Code, Database |
+| Monitoring | Logs, Analytics |
+
+Use these tabs to prepare a generated project for real use: configure project details, manage access, connect infrastructure, inspect generated APIs, review database tables, and monitor usage.

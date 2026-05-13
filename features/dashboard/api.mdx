@@ -1,24 +1,28 @@
 ---
 title: API
-description: Manage project APIs, request access, and backend endpoints.
+description: Manage API usage, SDK generation, API keys, and integration targets.
+mode: "wide"
 ---
 
-Ugen projects can expose API resources for tables, items, files, and server functions. Use the dashboard API area to inspect endpoints, authentication, request limits, and logs.
+The API tab helps builders work with generated API resources and SDK code.
 
-## API capabilities
+<Frame>
+  <img src="/images/ugen-dashboard-api.png" alt="Ugen API tab with SDK and API key controls" />
+</Frame>
 
-- Authentication
-- Tables
-- Items
-- Files
-- Server Functions
-- Webhooks
-- Request logs
+## What you can manage
 
-## Production checklist
+- API calls per month usage
+- SDK generation
+- API keys
+- Integration targets
+- SDK language, such as JavaScript
+- Generated SDK code with copy action
 
-1. Require authentication for private resources.
-2. Validate inputs before writing to the database.
-3. Add rate limits for public endpoints.
-4. Store secrets outside frontend code.
-5. Monitor errors after deploy.
+## Example workflow
+
+1. Select an integration target, such as `users`.
+2. Choose the SDK language.
+3. Copy generated SDK code.
+4. Store API keys securely.
+5. Watch API usage in Analytics.
