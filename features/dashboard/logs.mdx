@@ -4,10 +4,10 @@ description: Monitor system activity, API requests, and serverless function exec
 mode: "wide"
 ---
 
-The Logs tab shows system activity and serverless function execution history.
+The Logs tab shows system activity, API requests, and serverless function execution history. It is the first place to check when data is not loading, an API call returns an unexpected result, or a generated workflow needs debugging.
 
 <Frame>
-  <img src="/images/ugen-dashboard-logs.png" alt="Ugen logs tab with API activity" />
+  <img src="/images/ugen-dashboard-logs-list.png" alt="Ugen logs tab with API request list" />
 </Frame>
 
 ## Filters
@@ -31,3 +31,23 @@ The project log can show API activity such as:
 - `GET /api/v2/items/ice_coverage_data`
 
 Use Logs to debug data loading, API calls, integrations, and server function behavior.
+
+## Open a log
+
+<Frame>
+  <img src="/images/ugen-dashboard-logs-detail.png" alt="Ugen opened log with request details, status, timing, and collection" />
+</Frame>
+
+Open a log row to inspect the exact request. The detail view shows:
+
+- **URL** for the endpoint that was called
+- **Method**, such as `GET`
+- **Status**, such as `204`
+- **Request duration** in milliseconds
+- **Started** and **Finished** timestamps
+- **Action by**, for example `system`
+- **Action type**, such as `GET_LIST`
+- **Collection**, such as `research_stations`
+- **Request** and **Response** tabs for deeper debugging
+
+This helps the team understand whether the issue is in the frontend, API, collection permissions, database data, or server function logic.

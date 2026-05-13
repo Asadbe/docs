@@ -1,11 +1,16 @@
 ---
 title: Deploy & Host
 description: Publish a Ugen project, share the live URL, and prepare production settings.
+mode: "wide"
 ---
 
 Ugen is built for fast publishing: describe the app, generate the project, review it, then deploy and share the result.
 
 ## Deployment flow
+
+<Frame>
+  <img src="/images/ugen-dashboard-publish-share.png" alt="Ugen publish modal with share URL and app visibility settings" />
+</Frame>
 
 <Steps>
   <Step title="Review the generated project">
@@ -15,12 +20,23 @@ Ugen is built for fast publishing: describe the app, generate the project, revie
     Add required secrets, API keys, integrations, database rules, file storage settings, and domain settings.
   </Step>
   <Step title="Deploy">
-    Use the deployment controls in the project dashboard to publish the latest version.
+    Use **Publish** in the project dashboard to publish the latest version.
   </Step>
   <Step title="Share and monitor">
     Open the live URL, test the production flow, then watch logs and analytics after launch.
   </Step>
 </Steps>
+
+## Share a live app
+
+The Publish modal gives the project a shareable URL. Copy the URL and send it to a client, teammate, or tester.
+
+You can also control **App Visibility**:
+
+- **Public (no login)** lets anyone with the link open the app.
+- Restricted visibility is useful when only invited users, employees, or clients should access the app.
+
+After clicking **Publish App**, the latest generated version becomes available through the shared link. Use this for demos, client review, QA, and production handoff.
 
 ## Pre-launch checklist
 

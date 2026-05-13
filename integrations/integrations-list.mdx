@@ -1,38 +1,50 @@
 ---
 title: Integrations list
-description: Browse Ugen connectors for payments, CRM, productivity, databases, HR, and developer tools.
+description: Review the integrations available inside a Ugen project dashboard.
 mode: "wide"
 ---
 
-Ugen includes a growing connector catalog for the tools teams already use. Use connectors to add payments, CRM sync, storage, notifications, database access, and automation to generated apps.
+Ugen integrations connect a generated project to real infrastructure: databases, source control, analytics tools, messaging providers, and media processing.
 
 <Frame>
-  <img src="/images/ugen-connectors.png" alt="Ugen connectors catalog" />
+  <img src="/images/ugen-dashboard-integrations.png" alt="Ugen dashboard integrations list with connected and available services" />
 </Frame>
 
-## Connector categories
+## Integrations
 
 <CardGroup cols={2}>
-  <Card title="Payments" icon="credit-card">
-    Stripe, PayPal, Square, Braintree, Paddle, and Adyen.
+  <Card title="PostgreSQL" icon="database">
+    Relational database for structured product data, generated tables, SQL queries, and production storage.
   </Card>
-  <Card title="Marketing & CRM" icon="megaphone">
-    HubSpot, Salesforce, Mailchimp, Brevo, Intercom, Customer.io, Klaviyo, and Segment.
+  <Card title="MongoDB" icon="database">
+    Document database for flexible records, nested data, and use cases where schema can evolve quickly.
   </Card>
-  <Card title="Productivity" icon="briefcase">
-    Slack, Notion, Airtable, Asana, Jira, Google Drive, Google Sheets, Google Calendar, Microsoft 365, and Teams.
+  <Card title="ClickHouse" icon="bar-chart">
+    Analytics database for large event streams, logs, metrics, and fast reporting queries.
   </Card>
-  <Card title="Databases & Storage" icon="database">
-    PostgreSQL, MongoDB, Firebase, Supabase, AWS S3, Cloudinary, MySQL, and Snowflake.
+  <Card title="Playmobile" icon="message-circle">
+    SMS provider for verification codes, delivery notifications, alerts, and phone-based user messages.
   </Card>
-  <Card title="HR & People" icon="users">
-    Workday, BambooHR, Rippling, Gusto, DocuSign, and HelloSign.
+  <Card title="SMTP" icon="mail">
+    Email sending for invites, password resets, confirmations, transactional emails, and system alerts.
   </Card>
-  <Card title="Developer Tools" icon="code-2">
-    GitHub, GitLab, Bitbucket, Twilio, SendGrid, and Algolia.
+  <Card title="GitHub" icon="github">
+    Source control integration for storing generated code, reviewing changes, and continuing development with a team.
+  </Card>
+  <Card title="GitLab" icon="git-branch">
+    Repository and CI/CD integration for teams that manage code, review, and deployment through GitLab.
+  </Card>
+  <Card title="Superset" icon="pie-chart">
+    Business intelligence dashboards for advanced analytics and client-facing reporting.
+  </Card>
+  <Card title="Metabase" icon="line-chart">
+    No-code reporting tool for internal dashboards, product metrics, and business questions.
+  </Card>
+  <Card title="Transcoder" icon="video">
+    Media processing integration for converting uploaded video or audio into formats ready for playback.
   </Card>
 </CardGroup>
 
-## Request a connector
+## Status
 
-If the service you need is not listed, collect the API documentation, auth method, required scopes, and example workflow before requesting it.
+Each integration can appear as **Connected** or **Available**. Connected means the project already has credentials and configuration. Available means the integration can be connected when the generated product needs that capability.

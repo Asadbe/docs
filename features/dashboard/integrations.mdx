@@ -14,17 +14,21 @@ The Integrations tab connects the project to external services and infrastructur
 
 The project dashboard shows connected and available integrations, including:
 
-- PostgreSQL
-- MongoDB
-- ClickHouse
-- Playmobile
-- SMTP
-- GitHub
-- GitLab
-- Superset
-- Metabase
-- Transcoder
+- **PostgreSQL** for relational app data, generated tables, SQL workflows, and production-grade storage.
+- **MongoDB** for document-style data where records can be flexible and nested.
+- **ClickHouse** for analytics-heavy data, events, large logs, and fast reporting queries.
+- **Playmobile** for SMS notifications, verification codes, and phone-based user communication.
+- **SMTP** for sending transactional emails such as invites, confirmations, resets, and system alerts.
+- **GitHub** for connecting generated code to a repository and team development workflow.
+- **GitLab** for source control, review, and CI/CD workflows in teams that use GitLab.
+- **Superset** for advanced dashboards and BI reporting on top of project data.
+- **Metabase** for no-code analytics dashboards, internal reports, and business metrics.
+- **Transcoder** for processing media files when the project needs video or audio conversion.
 
 ## Status
 
 Integrations can show states such as **Connected** or **Available**. A connected integration is already configured for the project. An available integration can be connected when the app needs it.
+
+## How to choose
+
+Use database integrations when the app needs external or specialized storage. Use source control integrations when developers need to continue work outside Ugen. Use analytics integrations when managers or clients need dashboards. Use SMTP and Playmobile when the product needs real user communication.

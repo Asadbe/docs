@@ -4,25 +4,34 @@ description: Manage API usage, SDK generation, API keys, and integration targets
 mode: "wide"
 ---
 
-The API tab helps builders work with generated API resources and SDK code.
+The API tab is one of Ugen's strongest production features: after Ugen generates the app, it also gives the project a usable backend API and SDK code for the selected resource.
 
 <Frame>
-  <img src="/images/ugen-dashboard-api.png" alt="Ugen API tab with SDK and API key controls" />
+  <img src="/images/ugen-dashboard-api-language.png" alt="Ugen API tab with SDK language selector and generated backend API code" />
 </Frame>
 
-## What you can manage
+## Why it matters
 
-- API calls per month usage
-- SDK generation
-- API keys
-- Integration targets
-- SDK language, such as JavaScript
-- Generated SDK code with copy action
+Ugen does not only create frontend screens. It prepares backend access for generated tables and resources, so a team can connect another frontend, mobile app, admin panel, automation, or external service without manually designing the API from zero.
+
+## Main areas
+
+- **API calls / month** shows how much API capacity the project has used.
+- **SDK** contains generated client code for the selected resource.
+- **API Keys** stores project keys used by external clients and integrations.
+- **Integration Target** lets you choose which backend resource to generate code for, such as `users`.
+- **Language selector** switches SDK examples between JavaScript, Python, Go, cURL, Dart, Kotlin, Swift, and other supported clients.
+- **Generated SDK code** gives a ready request example with copy action, so developers can paste it into their app quickly.
 
 ## Example workflow
 
 1. Select an integration target, such as `users`.
-2. Choose the SDK language.
-3. Copy generated SDK code.
-4. Store API keys securely.
-5. Watch API usage in Analytics.
+2. Choose the language used by your frontend, backend, or mobile team.
+3. Copy the generated SDK code.
+4. Add the API key from the **API Keys** tab.
+5. Call the Ugen backend from your external app, admin panel, automation, or mobile client.
+6. Watch API usage in Analytics and request history in Logs.
+
+<Tip>
+  This makes Ugen useful after the first generated app: the generated backend can become the data layer for other products too.
+</Tip>

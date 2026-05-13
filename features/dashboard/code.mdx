@@ -4,7 +4,7 @@ description: Manage generated frontend modules and server functions.
 mode: "wide"
 ---
 
-The Code tab manages generated frontend pages and server functions for the project.
+The Code tab manages generated frontend modules and server functions for the project. This is a key Ugen feature because the client can generate not only a data model, but also a usable frontend for an admin panel, internal dashboard, public website, or product interface.
 
 <Frame>
   <img src="/images/ugen-dashboard-code.png" alt="Ugen code tab with frontend and server functions" />
@@ -12,12 +12,21 @@ The Code tab manages generated frontend pages and server functions for the proje
 
 ## Code areas
 
-- **Frontend** for modular micro-frontends
-- **Server Functions** for backend logic
-- Frontend usage limits, such as `1 / 5`
-- Add Microfrontend action
-- Status, description, link, framework, open, and edit actions
+- **Frontend** stores generated microfrontends. A microfrontend can be an admin panel, catalog page, dashboard, customer portal, landing page, or any product screen that should show real project data.
+- **Server Functions** stores backend logic for custom workflows, automation, calculations, webhooks, and integrations.
+- **Frontend usage limits** show how many microfrontends are active in the current plan, for example `1 / 5`.
+- **Add Microfrontend** creates another generated frontend module for the same project.
+- **Status** shows whether the module is active and ready to use.
+- **Description** explains what the generated frontend is responsible for.
+- **Link** opens the generated frontend.
+- **Framework** shows the frontend technology used by the module.
+- **Open** lets the team view the module.
+- **Edit** lets the team continue improving the generated frontend.
 
 ## When to use it
 
-Use Code when you need to inspect generated modules, open the generated app code, edit a frontend, or add server-side functions for backend workflows.
+Use Code when the project needs a visible product experience on top of the generated backend. For example, after Ugen creates tables for products, orders, users, or reports, the client can create an admin panel or website where those records are displayed and managed.
+
+<Tip>
+  API gives the backend access; Code gives the visual product layer. Together they let a generated Ugen project become a real internal tool, admin panel, or customer-facing app.
+</Tip>

@@ -4,10 +4,10 @@ description: Monitor project performance, API health, usage limits, and plan cap
 mode: "wide"
 ---
 
-The Analytics tab combines project statistics, usage limits, and plan comparison.
+The Analytics tab combines project usage, project statistics, API health, and plan limits.
 
 <Frame>
-  <img src="/images/ugen-dashboard-analytics.png" alt="Ugen analytics tab with usage limits and plan comparison" />
+  <img src="/images/ugen-dashboard-analytics-usage.png" alt="Ugen analytics tab with usage limits and plan comparison" />
 </Frame>
 
 ## Usage limits
@@ -39,3 +39,26 @@ The plan comparison table shows limits across plans for:
 - AI tokens
 
 Review Analytics before production launch so the project has enough capacity for expected usage.
+
+## Project Statistics
+
+<Frame>
+  <img src="/images/ugen-dashboard-analytics-project-statistics.png" alt="Ugen project statistics tab with API health and project capacity metrics" />
+</Frame>
+
+The **Project Statistics** tab shows a live technical overview of the generated project. It helps the team understand both capacity and performance.
+
+Key metrics include:
+
+- **Functions** shows how many server functions are used.
+- **Microfrontends** shows how many generated frontend modules are active.
+- **Tables** shows how many database tables exist.
+- **API Keys** shows how many keys are configured.
+- **Users** shows current user usage against the plan limit.
+- **Database Records** shows how many records are stored.
+- **Requests Per Second, Minute, and Hour** show current API traffic.
+- **Average Response Time** shows backend speed.
+- **Error Rate** shows how many requests are failing.
+- **API Requests chart** shows request activity over time.
+
+Use Project Statistics before demo, launch, or client handoff to confirm that the generated app is healthy and within plan limits.

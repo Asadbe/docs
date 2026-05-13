@@ -4,15 +4,59 @@ description: Explore tables, records, diagrams, SQL, database size, analytics, a
 mode: "wide"
 ---
 
-The Database tab is the generated data workspace for the project.
+The Database tab is the generated data workspace for the project. It lets the team inspect every generated table, review the schema, understand backend relationships visually, and run SQL queries when custom data checks are needed.
 
 <Frame>
-  <img src="/images/ugen-dashboard-database.png" alt="Ugen database tab with table editor and generated tables" />
+  <img src="/images/ugen-dashboard-database-table-schema.png" alt="Ugen database table editor with table schema and records" />
 </Frame>
 
-## Database views
+## Table Editor
 
-Ugen includes:
+The **Table Editor** shows the generated database tables on the left and the selected table on the right. For each table, you can review records, columns, field names, field types, and generated data.
+
+Use this view to:
+
+- Open each generated table, such as Research Stations, Alerts, Weather Records, Users, or SMS Template.
+- Check whether the schema matches the product idea.
+- Review records and confirm that the app is saving the correct data.
+- Add rows, filter records, and inspect specific columns.
+- Understand what data the generated frontend and API are using.
+
+## DB Diagram
+
+<Frame>
+  <img src="/images/ugen-dashboard-database-diagram.png" alt="Ugen database visualizer with DB diagram and schema relations" />
+</Frame>
+
+The **DB Diagram** tab opens the visualizer. It shows the full backend structure as a diagram, including tables and relations. This gives the team a big-picture view of the generated backend.
+
+Use DB Diagram when you need to understand:
+
+- Which tables exist in the project
+- How tables are connected
+- Where user, content, report, or workflow data is stored
+- Whether the generated backend model is ready for production
+- What should be changed before adding more features
+
+## SQL Editor
+
+<Frame>
+  <img src="/images/ugen-dashboard-database-sql-editor.png" alt="Ugen SQL editor for running custom database queries" />
+</Frame>
+
+The **SQL Editor** lets technical users write and run their own queries. This is useful for quick checks, debugging, reports, and custom data exploration.
+
+You can use SQL Editor to:
+
+- Run `SELECT` queries against generated tables.
+- Check record counts and data quality.
+- Debug whether the API and frontend are reading the expected data.
+- Save useful queries for later.
+- Build a custom query before turning it into a feature or report.
+
+## Available views
+
+Ugen includes these database tools:
 
 - **Table Editor**
 - **DB Diagram**
