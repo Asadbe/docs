@@ -4,7 +4,7 @@ description: Configure user type permissions for menu pages and database tables.
 mode: "wide"
 ---
 
-Permissions define what each user type can access inside the generated application.
+Permissions define what each user type can access inside the generated application. Use this page after the permission data finishes loading, then configure access for the selected role.
 
 <Frame>
   <img src="/images/ugen-dashboard-permissions.png" alt="Ugen permissions tab" />
@@ -20,10 +20,24 @@ The Permissions tab includes:
 - **Save Changes** action
 - Granular permission loading for detailed rules
 
+## How permissions work
+
+Permissions are usually controlled per user type. For each role, you can decide which parts of the generated app should be available and which database resources the role can read, create, update, or delete.
+
+Common examples:
+
+- Disable admin-only menu pages for regular employees.
+- Allow a manager to view reports but prevent database schema changes.
+- Give operators access to orders and customers but hide settings.
+- Allow a support user to read user records but not delete them.
+- Restrict sensitive tables such as payments, API keys, or internal reports.
+
 ## Recommended workflow
 
 1. Select the user type.
-2. Review table permissions.
-3. Add custom permissions for special workflows.
-4. Save changes.
-5. Test the app as a user with that role.
+2. Wait until granular permissions finish loading.
+3. Review table permissions.
+4. Disable menu pages or table actions the role should not access.
+5. Add custom permissions for special workflows.
+6. Save changes.
+7. Test the app as a user with that role.

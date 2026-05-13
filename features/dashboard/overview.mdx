@@ -4,10 +4,10 @@ description: Understand the real Ugen project dashboard, including Settings, Pre
 mode: "wide"
 ---
 
-The Ugen project dashboard opens after you select a chat or project. It combines the AI chat, project controls, generated preview, code access, deployment actions, and a settings workspace with project management tabs.
+The Ugen project dashboard opens after you select a chat or project. It combines the generated app preview, project controls, code access, deployment actions, and a settings workspace with project management tabs.
 
 <Frame>
-  <img src="/images/ugen-dashboard-project-settings.png" alt="Ugen project dashboard settings workspace" />
+  <img src="/images/ugen-dashboard-no-chat.png" alt="Ugen project dashboard with AI chat collapsed" />
 </Frame>
 
 ## Project workspace
@@ -22,6 +22,11 @@ The top project controls include:
 - **Visual Edit** for editing the generated UI from the preview
 - **Theme** for visual styling controls
 - **Desktop** and **Fullscreen** controls for preview testing
+- **Open AI Chat / Collapse AI Chat** to show or hide the prompt conversation
+
+<Tip>
+  Collapse the AI chat when you want a full-width dashboard or preview area for reviewing settings, code, files, database, logs, and analytics.
+</Tip>
 
 ## Settings sidebar
 
@@ -34,3 +39,41 @@ Inside **Settings**, the left sidebar is organized into three groups:
 | Monitoring | Logs, Analytics |
 
 Use these tabs to prepare a generated project for real use: configure project details, manage access, connect infrastructure, inspect generated APIs, review database tables, and monitor usage.
+
+## What each dashboard tab does
+
+<CardGroup cols={2}>
+  <Card title="Project Settings" icon="settings" href="/features/dashboard/project-settings">
+    Configure logo, name, languages, timezone, icon collections, environments, and language keys.
+  </Card>
+  <Card title="Users" icon="users" href="/features/dashboard/users">
+    View application users, track user limits, and invite employees or clients.
+  </Card>
+  <Card title="Permissions" icon="shield-check" href="/features/dashboard/permissions">
+    Control menu access, table access, and custom role permissions.
+  </Card>
+  <Card title="Files" icon="folder" href="/features/dashboard/files">
+    Manage uploaded media, generated assets, folders, and storage usage.
+  </Card>
+  <Card title="Secrets" icon="lock-keyhole" href="/features/dashboard/secrets">
+    Store environment variables, API keys, and private integration values.
+  </Card>
+  <Card title="Integrations" icon="plug" href="/features/dashboard/integrations">
+    Connect databases, source control, analytics tools, SMTP, and third-party services.
+  </Card>
+  <Card title="API" icon="braces" href="/features/dashboard/api">
+    Manage SDK generation, API keys, API usage, and integration targets.
+  </Card>
+  <Card title="Code" icon="code-2" href="/features/dashboard/code">
+    Open generated frontend modules and manage server functions.
+  </Card>
+  <Card title="Database" icon="database" href="/features/dashboard/database">
+    Use the table editor, DB diagram, SQL editor, analytics, and snapshots.
+  </Card>
+  <Card title="Logs" icon="scroll-text" href="/features/dashboard/logs">
+    Monitor API requests, activity logs, collections, and serverless executions.
+  </Card>
+  <Card title="Analytics" icon="chart-no-axes-combined" href="/features/dashboard/analytics">
+    Review project capacity, plan limits, API health, records, storage, and token usage.
+  </Card>
+</CardGroup>
