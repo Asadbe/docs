@@ -19,6 +19,10 @@ curl https://api.your-ugen-app.com/v1/tables \
 | `Authorization` | `Bearer YOUR_API_KEY` |
 | `Content-Type` | `application/json` for JSON requests |
 
+## Where keys come from
+
+Create and manage keys in **Dashboard → API → API Keys**. Use one key for development/testing and a separate key for production. If a key is exposed, rotate it and update the connected app or server function.
+
 ## Security guidelines
 
 - Keep API keys server-side.

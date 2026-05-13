@@ -20,6 +20,16 @@ The Permissions tab includes:
 - **Save Changes** action
 - Granular permission loading for detailed rules
 
+## Table permission actions
+
+| Permission | Meaning |
+| --- | --- |
+| Read | Allows the role to view records from the table. |
+| Write | Allows the role to create new records. |
+| Update | Allows the role to edit existing records. |
+| Delete | Allows the role to remove records. |
+| Public | Allows broader access when a table is intended to be visible without strict user restrictions. |
+
 ## How permissions work
 
 Permissions are usually controlled per user type. For each role, you can decide which parts of the generated app should be available and which database resources the role can read, create, update, or delete.
@@ -41,3 +51,7 @@ Common examples:
 5. Add custom permissions for special workflows.
 6. Save changes.
 7. Test the app as a user with that role.
+
+<Warning>
+  Be careful with Delete and Public access. These permissions can expose or remove important project data if they are enabled for the wrong role.
+</Warning>

@@ -28,3 +28,7 @@ curl -X POST https://api.your-ugen-app.com/v1/functions/send-welcome-email \
 ## Function design
 
 Keep each function focused. A good server function accepts a small input payload, validates it, performs one job, and returns a clear success or error response.
+
+## Dashboard connection
+
+Server functions are managed from **Dashboard → Code → Server Functions**. Store private values in **Secrets**, call external services from the server function, and use **Logs** to debug execution.

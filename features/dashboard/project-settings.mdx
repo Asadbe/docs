@@ -14,9 +14,9 @@ Project Settings is the first tab inside the Ugen Settings workspace. It control
 
 Project Settings includes:
 
-- **Project Settings** for core identity and localization options.
-- **Environment Management** for environment-specific configuration.
-- **Language Keys** for translation keys and localized text.
+- **Project Settings** for core identity, branding, language, timezone, and icon options.
+- **Environment Management** for separating development, staging, and production values when the project grows.
+- **Language Keys** for text keys used by localization and multilingual generated interfaces.
 
 ## Inputs
 
@@ -27,6 +27,16 @@ Project Settings includes:
 | Project Languages | Defines the languages supported by the generated app and localization system. |
 | Timezone | Controls how dates, logs, schedules, reports, and time-based records should be interpreted. |
 | Icon Categories | Selects icon collections available to the generated UI and builder tools. |
+
+## Environment Management
+
+Use environment management when the same app needs different runtime values for development, staging, and production. For example, a test payment key can be used during development while a live payment key is used after publishing.
+
+This keeps the project safer because production values do not have to be mixed with testing values.
+
+## Language Keys
+
+Language keys support multilingual products. Instead of hardcoding every label directly into the interface, the project can keep text keys that map to localized values. This is useful for products that need English, Russian, Uzbek, or other languages in the same app.
 
 ## Actions
 

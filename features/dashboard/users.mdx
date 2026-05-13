@@ -36,6 +36,15 @@ This is useful when a client wants to add employees to their own system. For exa
 - Use table pagination for larger user lists
 - Upgrade the plan when the user limit is reached
 
+## Invite methods
+
+| Method | When to use it |
+| --- | --- |
+| Login | Create a user with direct login and password. Good for employees who need immediate access to an internal system. |
+| Phone | Invite or identify users by phone number when the product uses SMS, call center, or phone-based workflows. |
+| Email | Invite users through email when the system should send onboarding or account messages. |
+| Link | Share an invite link when the client wants users to join themselves without manually creating every account. |
+
 ## Columns
 
 | Column | Purpose |
@@ -47,3 +56,7 @@ This is useful when a client wants to add employees to their own system. For exa
 | Email | User email |
 | Phone | Optional phone number |
 | Action | User management actions |
+
+## Recommended setup
+
+Create clear user types before inviting many people. For example, a client system can have Admin, Manager, Operator, and Viewer users. Then use Permissions to decide what each user type can see and do.

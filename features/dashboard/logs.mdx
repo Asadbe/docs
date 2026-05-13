@@ -19,6 +19,8 @@ Logs include controls for:
 - Time range
 - Collection
 
+Use filters when the project has many requests. For example, filter by collection to inspect only `research_stations`, or filter by action to review only list requests, create requests, updates, or failures.
+
 ## Example events
 
 The project log can show API activity such as:
@@ -51,3 +53,12 @@ Open a log row to inspect the exact request. The detail view shows:
 - **Request** and **Response** tabs for deeper debugging
 
 This helps the team understand whether the issue is in the frontend, API, collection permissions, database data, or server function logic.
+
+## Debugging flow
+
+1. Reproduce the issue in Preview or the live app.
+2. Open Logs and filter by the affected collection or action.
+3. Open the newest matching log.
+4. Check method, URL, status, duration, and response.
+5. If the request is blocked, review Permissions and API keys.
+6. If the request succeeds but data is wrong, review Database records and schema.
