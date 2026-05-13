@@ -1,0 +1,36 @@
+---
+title: Deploy & Host
+description: Publish a Ugen project, share the live URL, and prepare production settings.
+---
+
+Ugen is built for fast publishing: describe the app, generate the project, review it, then deploy and share the result.
+
+## Deployment flow
+
+<Steps>
+  <Step title="Review the generated project">
+    Test the main user flow, confirm the UI matches the prompt, and check that data fields are correct.
+  </Step>
+  <Step title="Configure production values">
+    Add required secrets, API keys, integrations, database rules, file storage settings, and domain settings.
+  </Step>
+  <Step title="Deploy">
+    Use the deployment controls in the project dashboard to publish the latest version.
+  </Step>
+  <Step title="Share and monitor">
+    Open the live URL, test the production flow, then watch logs and analytics after launch.
+  </Step>
+</Steps>
+
+## Pre-launch checklist
+
+- Authentication works for the expected user roles.
+- Database tables contain the required fields.
+- API keys and secrets are stored outside frontend code.
+- Payment, email, and external integrations are tested.
+- Logs show no blocking runtime errors.
+- Analytics events are tracking the main product actions.
+
+<Warning>
+  Never launch with test API keys, exposed secrets, or unverified permissions.
+</Warning>

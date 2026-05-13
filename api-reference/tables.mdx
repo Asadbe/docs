@@ -1,0 +1,35 @@
+---
+title: Tables
+description: Manage generated database tables through the API.
+---
+
+Tables are structured collections of records generated from your Ugen project idea.
+
+## List tables
+
+```bash
+curl https://api.your-ugen-app.com/v1/tables \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Example response
+
+```json
+{
+  "data": [
+    {
+      "id": "tbl_customers",
+      "name": "customers",
+      "columns": ["id", "name", "email", "created_at"]
+    }
+  ]
+}
+```
+
+## Common table actions
+
+- List tables
+- Create a table
+- Update table schema
+- Delete a table
+- Review relationships

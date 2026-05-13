@@ -1,0 +1,27 @@
+---
+title: Auth
+description: Authenticate requests to Ugen-generated APIs.
+---
+
+Ugen APIs should be protected with bearer tokens or project-specific API keys. Use authenticated requests for private tables, user data, file access, and server functions.
+
+## Bearer token
+
+```bash
+curl https://api.your-ugen-app.com/v1/tables \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Header format
+
+| Header | Value |
+| --- | --- |
+| `Authorization` | `Bearer YOUR_API_KEY` |
+| `Content-Type` | `application/json` for JSON requests |
+
+## Security guidelines
+
+- Keep API keys server-side.
+- Use separate keys for development and production.
+- Rotate leaked keys immediately.
+- Scope keys to the minimum required permissions.

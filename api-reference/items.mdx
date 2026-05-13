@@ -1,0 +1,33 @@
+---
+title: Items
+description: Create, read, update, and delete records inside Ugen tables.
+---
+
+Items are records stored inside a table.
+
+## Create item
+
+```bash
+curl -X POST https://api.your-ugen-app.com/v1/tables/customers/items \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Ada Lovelace",
+    "email": "ada@example.com"
+  }'
+```
+
+## List items
+
+```bash
+curl https://api.your-ugen-app.com/v1/tables/customers/items \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Common item actions
+
+- Create item
+- List items
+- Get item by ID
+- Update item
+- Delete item

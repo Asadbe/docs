@@ -1,0 +1,31 @@
+---
+title: Files
+description: Upload, retrieve, and delete files through generated APIs.
+---
+
+Use the Files API for user uploads, generated assets, documents, images, and project files.
+
+## Upload file
+
+```bash
+curl -X POST https://api.your-ugen-app.com/v1/files \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -F "file=@proposal.pdf"
+```
+
+## File response
+
+```json
+{
+  "id": "file_123",
+  "name": "proposal.pdf",
+  "url": "https://cdn.your-ugen-app.com/files/proposal.pdf",
+  "content_type": "application/pdf"
+}
+```
+
+## Best practices
+
+- Validate file type and size.
+- Use signed URLs for private files.
+- Do not expose sensitive uploads publicly.

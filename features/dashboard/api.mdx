@@ -1,0 +1,24 @@
+---
+title: API
+description: Manage project APIs, request access, and backend endpoints.
+---
+
+Ugen projects can expose API resources for tables, items, files, and server functions. Use the dashboard API area to inspect endpoints, authentication, request limits, and logs.
+
+## API capabilities
+
+- Authentication
+- Tables
+- Items
+- Files
+- Server Functions
+- Webhooks
+- Request logs
+
+## Production checklist
+
+1. Require authentication for private resources.
+2. Validate inputs before writing to the database.
+3. Add rate limits for public endpoints.
+4. Store secrets outside frontend code.
+5. Monitor errors after deploy.

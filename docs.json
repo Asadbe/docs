@@ -1,88 +1,77 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Ugen",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0EA5E9",
+    "light": "#38BDF8",
+    "dark": "#60A5FA"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Introduction",
+        "pages": [
+          "index",
+          "getting-started/create-account",
+          "getting-started/plans-credits",
+          "getting-started/first-app-15-minutes",
+          "workspace",
+          "account"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "group": "Features",
+        "pages": [
           {
-            "group": "API documentation",
+            "group": "Dashboard",
             "pages": [
-              "api-reference/introduction"
+              "features/dashboard/overview",
+              "features/dashboard/project-settings",
+              "features/dashboard/users",
+              "features/dashboard/permissions",
+              "features/dashboard/files",
+              "features/dashboard/secrets",
+              "features/dashboard/integrations",
+              "features/dashboard/api",
+              "features/dashboard/code",
+              "features/dashboard/database",
+              "features/dashboard/logs",
+              "features/dashboard/analytics"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "API Docs",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/auth",
+              "api-reference/tables",
+              "api-reference/items",
+              "api-reference/files",
+              "api-reference/server-functions"
             ]
-          }
+          },
+          "deploy-host"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/integrations-list"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Ugen app",
+          "href": "https://ugen-cquc.vercel.app",
+          "icon": "rocket"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Community",
+          "href": "https://t.me/ucode_community",
+          "icon": "send"
         }
       ]
     }
@@ -94,33 +83,27 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Pricing",
+        "href": "https://ugen-cquc.vercel.app/pricing"
+      },
+      {
+        "label": "Templates",
+        "href": "https://ugen-cquc.vercel.app/templates"
+      },
+      {
+        "label": "Connectors",
+        "href": "https://ugen-cquc.vercel.app/connectors"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Ugen",
+      "href": "https://ugen-cquc.vercel.app/projects"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/asadbe/docs"
     }
   }
 }

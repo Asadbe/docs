@@ -1,0 +1,30 @@
+---
+title: Server Functions
+description: Run backend logic for generated apps.
+---
+
+Server Functions let a Ugen project run backend logic that should not live in the browser.
+
+## Use cases
+
+- Payment webhooks
+- Email workflows
+- AI processing
+- Scheduled jobs
+- Data validation
+- External API calls
+
+## Invoke a function
+
+```bash
+curl -X POST https://api.your-ugen-app.com/v1/functions/send-welcome-email \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "user_123"
+  }'
+```
+
+## Function design
+
+Keep each function focused. A good server function accepts a small input payload, validates it, performs one job, and returns a clear success or error response.
