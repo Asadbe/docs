@@ -19,7 +19,8 @@
           "getting-started/first-app-15-minutes",
           "workspace",
           "account"
-        ]
+        ],
+        "icon": "book-open"
       },
       {
         "tab": "Features",
@@ -57,13 +58,15 @@
               "deploy-host"
             ]
           }
-        ]
+        ],
+        "icon": "sparkles"
       },
       {
         "tab": "Integrations",
         "pages": [
           "integrations/integrations-list"
-        ]
+        ],
+        "icon": "blocks"
       }
     ]
   },
@@ -88,7 +91,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Open Ugen",
+      "label": "Open Ucode",
       "href": "https://ugen-cquc.vercel.app/projects"
     }
   },
