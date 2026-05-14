@@ -1,39 +1,32 @@
 ---
 title: Tables
-description: Manage generated database tables through the API.
+description: Choose generated tables as API integration targets.
 ---
 
-Tables are structured collections of records generated from your Ugen project idea.
+Tables are structured collections of records generated from your Ugen project idea. In **Dashboard → API**, tables appear in the **Integration Target** dropdown.
 
-## List tables
+## Integration targets
+
+The Arctic project API target list includes generated tables such as:
+
+- `analytics_snapshots`
+- `ice_coverage_data`
+- `research_reports`
+- `alerts`
+- `weather_records`
+- `research_stations`
+- `users`
+- `sms_template`
+- `person`
+- `role`
+- `client_type`
+
+Selecting a table changes the generated SDK/cURL endpoint to:
 
 ```bash
-curl https://api.your-ugen-app.com/v1/tables \
-  -H "Authorization: Bearer YOUR_API_KEY"
+https://admin-api.ucode.run/v2/items/{table}
 ```
-
-## Example response
-
-```json
-{
-  "data": [
-    {
-      "id": "tbl_customers",
-      "name": "customers",
-      "columns": ["id", "name", "email", "created_at"]
-    }
-  ]
-}
-```
-
-## Common table actions
-
-- List tables
-- Create a table
-- Update table schema
-- Delete a table
-- Review relationships
 
 ## Dashboard connection
 
-Use **Dashboard → Database → Table Editor** to inspect tables visually. Use **DB Diagram** to understand table relationships, then use the API when another frontend, mobile app, or automation needs to read or write the same data.
+Use **Dashboard → Database → Table Editor** to inspect table schema and records visually. Use **DB Diagram** to understand relationships, then use **Dashboard → API** when another frontend, mobile app, or automation needs to read or write the same table data.

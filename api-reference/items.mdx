@@ -1,36 +1,45 @@
 ---
 title: Items
-description: Create, read, update, and delete records inside Ugen tables.
+description: Read and create records inside Ugen-generated tables using Dashboard API cURL examples.
 ---
 
-Items are records stored inside a table.
+Items are records stored inside a generated table. The Dashboard API tab generates cURL examples for the selected table.
+
+## List records
+
+```bash
+curl -X GET "https://admin-api.ucode.run/v2/items/users" \
+  -H "authorization: API-KEY" \
+  -H "x-api-key: YOUR_API_KEY"
+```
+
+Replace `users` with any table from the Integration Target dropdown, such as `research_stations`, `alerts`, or `weather_records`.
+
+## Get one record
+
+```bash
+curl -X GET "https://admin-api.ucode.run/v2/items/users/RECORD_ID" \
+  -H "authorization: API-KEY" \
+  -H "x-api-key: YOUR_API_KEY"
+```
 
 ## Create item
 
 ```bash
-curl -X POST https://api.your-ugen-app.com/v1/tables/customers/items \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+curl -X POST "https://admin-api.ucode.run/v2/items/users" \
+  -H "authorization: API-KEY" \
+  -H "x-api-key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "name": "Ada Lovelace",
-    "email": "ada@example.com"
-  }'
+  -d '{"data": {"title": "New Item"}}'
 ```
 
-## List items
+The request body is wrapped in a `data` object. Replace the example fields with real columns from the selected table schema.
 
-```bash
-curl https://api.your-ugen-app.com/v1/tables/customers/items \
-  -H "Authorization: Bearer YOUR_API_KEY"
-```
+## Common item actions in Dashboard API
 
-## Common item actions
-
-- Create item
-- List items
-- Get item by ID
-- Update item
-- Delete item
+- Get all records
+- Get a single record by ID
+- Create a new record
 
 ## Permissions
 

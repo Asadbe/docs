@@ -1,6 +1,6 @@
 ---
 title: Server Functions
-description: Run backend logic for generated apps.
+description: Run backend logic that complements generated table APIs.
 ---
 
 Server Functions let a Ugen project run backend logic that should not live in the browser.
@@ -14,16 +14,15 @@ Server Functions let a Ugen project run backend logic that should not live in th
 - Data validation
 - External API calls
 
-## Invoke a function
+## API relationship
+
+The Dashboard API tab focuses on generated table/item endpoints, such as:
 
 ```bash
-curl -X POST https://api.your-ugen-app.com/v1/functions/send-welcome-email \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "user_id": "user_123"
-  }'
+https://admin-api.ucode.run/v2/items/users
 ```
+
+Server functions are managed separately in **Dashboard → Code → Server Functions**. Use them when an action needs custom backend work before or after calling table APIs.
 
 ## Function design
 
