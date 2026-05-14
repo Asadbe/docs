@@ -26,7 +26,6 @@
         "groups": [
           {
             "group": "Settings",
-            "icon": "gear",
             "pages": [
               "features/dashboard/overview",
               "features/dashboard/project-settings",
@@ -44,7 +43,6 @@
           },
           {
             "group": "API Docs",
-            "icon": "server",
             "pages": [
               "api-reference/auth",
               "api-reference/tables",
@@ -55,7 +53,6 @@
           },
           {
             "group": "Deploy",
-            "icon": "rocket",
             "pages": [
               "deploy-host"
             ]
