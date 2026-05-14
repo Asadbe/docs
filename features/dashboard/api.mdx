@@ -4,7 +4,7 @@ description: Manage API usage, SDK generation, API keys, and integration targets
 mode: "wide"
 ---
 
-The API tab is one of Ugen's strongest production features: after Ugen generates the app, it also gives the project a usable backend API and SDK code for the selected resource.
+The API tab is one of Ugen's strongest production features: after Ugen generates the app, it also gives the project a usable backend API and SDK/cURL code for the selected table.
 
 <Frame>
   <img src="/images/ugen-dashboard-api-language.png" alt="Ugen API tab with SDK language selector and generated backend API code" />
@@ -19,9 +19,9 @@ Ugen does not only create frontend screens. It prepares backend access for gener
 - **API calls / month** shows how much API capacity the project has used.
 - **SDK** contains generated client code for the selected resource.
 - **API Keys** stores project keys used by external clients and integrations.
-- **Integration Target** lets you choose which backend resource to generate code for, such as `users`.
+- **Integration Target** lets you choose which backend table to generate code for, such as `research_stations`, `alerts`, `weather_records`, or `users`.
 - **Language selector** switches SDK examples between JavaScript, Python, Go, cURL, Dart, Kotlin, Swift, and other supported clients.
-- **Generated SDK code** gives a ready request example with copy action, so developers can paste it into their app quickly.
+- **Generated SDK code** gives ready request examples with copy action. In cURL mode, Ugen generates working requests for list, single record, and create operations.
 
 ## Tabs
 
@@ -36,12 +36,20 @@ The language selector is important because different teams use different stacks.
 
 ## Example workflow
 
-1. Select an integration target, such as `users`.
+1. Select an integration target, such as `research_stations`.
 2. Choose the language used by your frontend, backend, or mobile team.
 3. Copy the generated SDK code.
 4. Add the API key from the **API Keys** tab.
 5. Call the Ugen backend from your external app, admin panel, automation, or mobile client.
 6. Watch API usage in Analytics and request history in Logs.
+
+## cURL endpoint format
+
+```bash
+curl -X GET "https://admin-api.ucode.run/v2/items/research_stations" \
+  -H "authorization: API-KEY" \
+  -H "x-api-key: YOUR_API_KEY"
+```
 
 <Tip>
   This makes Ugen useful after the first generated app: the generated backend can become the data layer for other products too.

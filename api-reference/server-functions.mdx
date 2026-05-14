@@ -16,13 +16,13 @@ Server Functions let a Ugen project run backend logic that should not live in th
 
 ## API relationship
 
-The Dashboard API tab focuses on generated table/item endpoints, such as:
+The **Settings → API** tab focuses on generated table/item endpoints, such as:
 
 ```bash
 https://admin-api.ucode.run/v2/items/users
 ```
 
-Server functions are managed separately in **Dashboard → Code → Server Functions**. Use them when an action needs custom backend work before or after calling table APIs.
+Server functions are managed separately in **Settings → Code → Server Functions**. Use them when an action needs custom backend work before or after calling table APIs.
 
 ## Function design
 
@@ -30,4 +30,4 @@ Keep each function focused. A good server function accepts a small input payload
 
 ## Dashboard connection
 
-Server functions are managed from **Dashboard → Code → Server Functions**. Store private values in **Secrets**, call external services from the server function, and use **Logs** to debug execution.
+Server functions are managed from **Settings → Code → Server Functions**. Store private values in **Secrets**, call external services from the server function, and use **Logs** to debug execution.
