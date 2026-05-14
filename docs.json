@@ -19,14 +19,14 @@
           "getting-started/first-app-15-minutes",
           "workspace",
           "account"
-        ],
-        "icon": "book-open"
+        ]
       },
       {
         "tab": "Features",
         "groups": [
           {
             "group": "Settings",
+            "icon": "settings",
             "pages": [
               "features/dashboard/overview",
               "features/dashboard/project-settings",
@@ -44,6 +44,7 @@
           },
           {
             "group": "API Docs",
+            "icon": "braces",
             "pages": [
               "api-reference/auth",
               "api-reference/tables",
@@ -54,19 +55,18 @@
           },
           {
             "group": "Deploy",
+            "icon": "rocket",
             "pages": [
               "deploy-host"
             ]
           }
-        ],
-        "icon": "sparkles"
+        ]
       },
       {
         "tab": "Integrations",
         "pages": [
           "integrations/integrations-list"
-        ],
-        "icon": "blocks"
+        ]
       }
     ]
   },
