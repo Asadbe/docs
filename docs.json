@@ -26,7 +26,7 @@
         "groups": [
           {
             "group": "Settings",
-            "icon": "settings",
+            "icon": "gear",
             "pages": [
               "features/dashboard/overview",
               "features/dashboard/project-settings",
@@ -44,7 +44,7 @@
           },
           {
             "group": "API Docs",
-            "icon": "braces",
+            "icon": "server",
             "pages": [
               "api-reference/auth",
               "api-reference/tables",
