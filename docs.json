@@ -43,13 +43,10 @@
           },
           {
             "group": "API Docs",
-            "pages": [
-              "api-reference/auth",
-              "api-reference/tables",
-              "api-reference/items",
-              "api-reference/files",
-              "api-reference/server-functions"
-            ]
+            "openapi": {
+              "source": "openapi/ucode-admin-openapi.json",
+              "directory": "ucode-admin-api"
+            }
           },
           {
             "group": "Deploy",

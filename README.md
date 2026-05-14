@@ -8,7 +8,7 @@ Mintlify documentation for Ucode, an AI-powered development platform for buildin
 - `index.mdx` introduces Ucode.
 - `getting-started/` covers account creation, plans, credits, and first-app creation.
 - `features/dashboard/` documents project dashboard tools.
-- `api-reference/` contains API documentation pages.
+- `openapi/` contains the imported Swagger/OpenAPI specification used to generate API Docs.
 - `integrations/` lists Ucode connector categories.
 - `images/ugen-*.png` contains screenshots from the live Ucode app.
 
