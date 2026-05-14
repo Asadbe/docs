@@ -44,8 +44,8 @@
           {
             "group": "API Docs",
             "openapi": {
-              "source": "openapi/ucode-admin-openapi.json",
-              "directory": "ucode-admin-api"
+              "source": "openapi/ucode-api-openapi.json",
+              "directory": "ucode-api"
             }
           },
           {
