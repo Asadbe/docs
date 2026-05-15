@@ -1,0 +1,36 @@
+---
+title: PostgreSQL
+description: Connect PostgreSQL as the relational database layer for a Ucode project.
+icon: database
+mode: "wide"
+---
+
+PostgreSQL is the main relational database integration for structured application data. Use it when the generated app needs durable tables, relations, SQL queries, and production-ready storage.
+
+<Frame>
+  <img src="/images/integrations/postgresql.png" alt="PostgreSQL integration card in the Ucode dashboard" />
+</Frame>
+
+## What this integration adds
+
+- Stores generated tables in a relational database.
+- Supports structured records, relations, constraints, and SQL workflows.
+- Gives the project a database layer that can be inspected from the Database tab.
+- Works well for admin panels, CRMs, inventory systems, booking systems, and finance-style tools.
+
+## Setup flow
+
+1. Open **Settings → Integrations**.
+2. Find **PostgreSQL**.
+3. Click **Connect** if it is not already connected.
+4. Add the database credentials requested by the connection form.
+5. Save the integration and test the generated app, API, and Database tab.
+
+## Values to prepare
+
+- Host and port.
+- Database name.
+- Username and password.
+- SSL mode or connection string when required.
+
+Store sensitive database values in **Secrets** when the project needs reusable environment variables.

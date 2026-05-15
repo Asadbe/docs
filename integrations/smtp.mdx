@@ -1,0 +1,36 @@
+---
+title: SMTP
+description: Connect SMTP to send transactional email from a Ucode project.
+icon: mail
+mode: "wide"
+---
+
+SMTP enables email delivery for generated products. Use it for invitations, password resets, account confirmations, invoices, reports, and system alerts.
+
+<Frame>
+  <img src="/images/integrations/smtp.png" alt="SMTP integration connect card in the Ucode dashboard" />
+</Frame>
+
+## What this integration adds
+
+- Sends transactional email from the project.
+- Supports user invites, password recovery, and account notifications.
+- Can be reused by server functions and app workflows.
+- Helps the generated product communicate with users outside the dashboard.
+
+## Setup flow
+
+1. Open **Settings → Integrations**.
+2. Select **SMTP**.
+3. Click **Connect**.
+4. Add the SMTP server credentials and sender details.
+5. Send a test email and review **Logs** if the provider rejects the message.
+
+## Values to prepare
+
+- SMTP host and port.
+- Username and password.
+- From email and sender name.
+- TLS or SSL setting.
+
+Use a real domain-backed sender for production so emails are less likely to land in spam.

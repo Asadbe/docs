@@ -1,0 +1,36 @@
+---
+title: Playmobile
+description: Connect Playmobile to send SMS messages from a Ucode project.
+icon: message-circle
+mode: "wide"
+---
+
+Playmobile connects a generated project to SMS messaging. Use it for verification codes, delivery notifications, operational alerts, and phone-based customer communication.
+
+<Frame>
+  <img src="/images/integrations/playmobile.png" alt="Playmobile integration connect card in the Ucode dashboard" />
+</Frame>
+
+## What this integration adds
+
+- Sends SMS messages from app workflows.
+- Supports login verification, OTP codes, and phone confirmations.
+- Sends alerts for orders, deliveries, bookings, or status changes.
+- Lets admins build notification flows without manually wiring an SMS provider.
+
+## Setup flow
+
+1. Open **Settings → Integrations**.
+2. Select **Playmobile**.
+3. Click **Connect**.
+4. Add the provider credentials and sender configuration.
+5. Trigger a test message and check **Logs** if delivery fails.
+
+## Values to prepare
+
+- Provider login or API key.
+- Provider password or secret.
+- Sender name or originator when required.
+- Test phone number for validation.
+
+Keep SMS credentials in **Secrets** and avoid exposing them in frontend code.

@@ -59,7 +59,16 @@
       {
         "tab": "Integrations",
         "pages": [
-          "integrations/integrations-list"
+          "integrations/integrations-list",
+          "integrations/postgresql",
+          "integrations/mongodb",
+          "integrations/clickhouse",
+          "integrations/playmobile",
+          "integrations/smtp",
+          "integrations/github",
+          "integrations/gitlab",
+          "integrations/superset",
+          "integrations/metabase"
         ]
       }
     ]
